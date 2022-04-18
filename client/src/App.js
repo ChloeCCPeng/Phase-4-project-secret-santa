@@ -4,13 +4,14 @@ import './components/OnlineStore';
 import './components/SignUp';
 import './components/Event';
 import './components/Invite';
-import './components/YourSecrect';
+import './components/YourSecret';
+import './components/Nav';
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Nav />
       <Switch>
         <Route exact path="/">
           <div class="home">
@@ -30,7 +31,7 @@ function App() {
           <Invite />
         </Route>
         <Route exact path="/yourSecret">
-          <YourSecrect />
+          <YourSecret />
         </Route>
       </Switch>
     </div>
