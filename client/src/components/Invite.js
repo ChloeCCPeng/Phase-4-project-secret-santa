@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import RSVP from './RSVP'
 
 function Invite() {
   return (
-    <div>Invite</div>
+    <div>
+      <RSVP />
+      <form className="invite" onSubmit={console.log()} >
+        <input type="text" id="invite" placeholder="Email" value="" onChange={console.log()} />
+        <button className="sendButton" type="submit">Send</button>
+        <button className="shareLinkButton" type="submit">Share Link</button>
+      </form>
+    </div>
   )
 }
 
