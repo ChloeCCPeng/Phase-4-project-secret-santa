@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import YourWishList from './YourWishList';
 
 function User() {
   const [user, setUser] = useState([])
@@ -12,7 +13,7 @@ function User() {
 
   return (
     <div>
-
+      <YourWishList />
     </div>
   )
 }

@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import YourWishListCard from './YourWishListCard'
 
 function YourWishList() {
   return (
-    <div>YourWishList</div>
+    <div>
+      <YourWishListCard />
+    </div>
   )
 }
 
