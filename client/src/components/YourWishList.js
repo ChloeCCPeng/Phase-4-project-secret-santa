@@ -1,10 +1,10 @@
 import React from 'react';
 import YourWishListCard from './YourWishListCard'
 
-function YourWishList() {
+function YourWishList({user}) {
   return (
     <div>
-      <YourWishListCard />
+      <YourWishListCard user={user} />
     </div>
   )
 }
