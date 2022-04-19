@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   #retriving the users data from the database 
   get "/me", to: "users#show"
+
+  resources :user
+
+
 end

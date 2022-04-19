@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    belongs_to :gift
+    has_many :gifts
 end
