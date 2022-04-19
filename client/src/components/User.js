@@ -13,7 +13,7 @@ function User() {
 
   return (
     <div>
-      <YourWishList />
+      <YourWishList user={user}/>
     </div>
   )
 }

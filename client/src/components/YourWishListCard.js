@@ -1,8 +1,10 @@
 import React from 'react'
 
-function YourWishListCard() {
+function YourWishListCard({user}) {
   return (
-    <div>YourWishListCard</div>
+    <div>
+      {user}
+    </div>
   )
 }
 
