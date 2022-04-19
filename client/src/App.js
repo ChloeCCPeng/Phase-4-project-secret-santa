@@ -18,7 +18,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/">
-            <Home />
           </Route>
           <Route exact path="/onlineStore">
             <OnlineStore />
