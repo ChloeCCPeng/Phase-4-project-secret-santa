@@ -2,7 +2,9 @@ import React from 'react'
 
 function RSVP() {
   return (
-    <div>RSVP</div>
+    <div>
+      <button className="rsvp" type="submit">RSVP</button>
+    </div>
   )
 }
 
