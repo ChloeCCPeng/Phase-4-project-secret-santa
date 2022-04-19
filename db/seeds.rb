@@ -6,14 +6,14 @@ Wishlist.destroy_all
 puts " Seeding data...."
 
 puts " 👥 Creating users "
-User.create(id: 1, first_name:"Maggie", last_name: "Lee", email: "maggie@abc.com", password: "maggie")
-User.create(id: 2, first_name:"Jackie", last_name: "Jordan", email: "jackie@abc.com", password: "maggie")
-User.create(id: 3, first_name:"Bryan", last_name: "Thao", email: "bryan@abc.com", password: "maggie")
-User.create(id: 4, first_name:"Chloe", last_name: "White", email: "chloe@abc.com", password: "maggie")
-User.create(id: 5, first_name:"Dennis", last_name: "Mercer", email: "dennis@abc.com", password: "maggie")
+User.create(id: 1, first_name:"Maggie", last_name: "Lee", email: "maggie@abc.com", password: "maggie", phone_number: "111-111-1111")
+User.create(id: 2, first_name:"Jackie", last_name: "Jordan", email: "jackie@abc.com", password: "maggie", phone_number: "111-111-1111")
+User.create(id: 3, first_name:"Bryan", last_name: "Thao", email: "bryan@abc.com", password: "maggie", phone_number: "111-111-1111")
+User.create(id: 4, first_name:"Chloe", last_name: "Whie", email: "chloe@abc.com", password: "maggie", phone_number: "111-111-1111")
+User.create(id: 5, first_name:"Dennis", last_name: "Mercer", email: "dennis@abc.com", password: "maggie", phone_number: "111-111-1111")
 
 puts " 🎁 Creating gifts "
-Gift.create(id: 1, item: "mouse")
+Gift.create(id: 1, item: "mouse321")
 Gift.create(id: 2, item: "travel mug")
 Gift.create(id: 3, item: "hiking backpack")
 Gift.create(id: 4, item: "keyboard")
