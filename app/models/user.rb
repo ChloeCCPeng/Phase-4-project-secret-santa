@@ -1,7 +1,7 @@
 class User < ApplicationRecord
-    has_many :gift
-    has_many :event
-    has_many :wishlist
+    has_many :gifts
+    has_many :events
+    has_many :wishlists
 
     # self join
     has_many :attender_joins, foreign_key: :attendee_id, class_name: "Join"
