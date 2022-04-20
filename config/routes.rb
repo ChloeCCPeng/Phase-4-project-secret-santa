@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   #log out flow 
   delete "/logout", to: "sessions#destroy"
   #retriving the users data from the database 
-  get "/me", to: "users#show"
-  resources :users 
+  # get "/me", to: "users#show"
+  resources :users, only: [:show, :create]
+  resources :wishlists, only: [:index, :update, :destroy]
 end
