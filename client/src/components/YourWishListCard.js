@@ -11,6 +11,7 @@ function YourWishListCard({user}) {
   return (
     <div>
       {user}
+      <button className="edit-btn" onClick={console.log("Edit")}>📝</button>
       <button className="delete-btn" onClick={handleDeleteBtn}>🗑</button>
     </div>
   )

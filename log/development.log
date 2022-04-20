@@ -548,3 +548,52 @@ Migrating to CreateJoins (20220419221457)
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "password", "phone_number", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["id", 5], ["first_name", "Dennis"], ["last_name", "Mercer"], ["password", "maggie"], ["phone_number", 111], ["email", "dennis@abc.com"], ["created_at", "2022-04-20 14:31:17.539044"], ["updated_at", "2022-04-20 14:31:17.539044"]]
   [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2022-04-20 10:18:09 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 16ms (Views: 3.8ms | ActiveRecord: 1.3ms | Allocations: 8720)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-04-20 10:18:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users" for ::1 at 2022-04-20 10:19:39 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 911)
+
+
+Started GET "/users" for ::1 at 2022-04-20 10:20:32 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+No serializer found for resource: #<User id: 1, first_name: "Maggie", last_name: "Lee", username: nil, password: [FILTERED], phone_number: 111, email: "maggie@abc.com", created_at: "2022-04-20 15:20:27.833276000 +0000", updated_at: "2022-04-20 15:20:27.833276000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.35ms)
+Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 6.5ms | Allocations: 6013)
+
+
+Started GET "/users/1" for ::1 at 2022-04-20 10:21:37 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 14ms (ActiveRecord: 0.0ms | Allocations: 1802)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:14:in `show'
+Started GET "/users" for ::1 at 2022-04-20 10:24:20 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+No serializer found for resource: #<User id: 1, first_name: "Maggie", last_name: "Lee", username: nil, password: [FILTERED], phone_number: 111, email: "maggie@abc.com", created_at: "2022-04-20 15:20:27.833276000 +0000", updated_at: "2022-04-20 15:20:27.833276000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (7.6ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 1.0ms | Allocations: 1396)
+
+
