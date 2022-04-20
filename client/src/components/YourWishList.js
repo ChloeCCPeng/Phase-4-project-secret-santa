@@ -1,7 +1,7 @@
 import React from 'react';
 import YourWishListCard from './YourWishListCard'
 
-function YourWishList({user}) {
+function YourWishList() {
   return (
     <div>
       <form className="wish-list" onSubmit={console.log()}>
@@ -13,7 +13,7 @@ function YourWishList({user}) {
         />
         <button className="submitBtn" type="submit">Submit</button>
       </form>
-      <YourWishListCard user={user} />
+      <YourWishListCard />
     </div>
   )
 }
