@@ -28,3 +28,5 @@ Wishlist.create(id: 2, wish1: "3D puzzles", wish2: "travel mug", wish3: "Apple a
 Wishlist.create(id: 3, wish1: "backpack", wish2: "travel mug", wish3: "sofa potato blanket", wish4: "air fryer", wish5: "candles")
 Wishlist.create(id: 4, wish1: "3D puzzles", wish2: "travel mug", wish3: "Apple air tags", wish4: "Silk Eyemask", wish5: "giftcards")
 Wishlist.create(id: 5, wish1: "3D puzzles", wish2: "travel mug", wish3: "Apple air tags", wish4: "Silk Eyemask", wish5: "giftcards")
+
+puts " Done seeding "
