@@ -1,7 +1,20 @@
-import React from 'react';
-import RSVP from './RSVP'
+import React, { useState, useEffect } from 'react';
+import RSVP from './RSVP';
+
+const inviteAPI = "http://localhost"
 
 function Invite() {
+
+  const [,set] = useState([])
+
+  useEffect(() => {
+    fetch(inviteAPI, {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(console.log("Hello world!"))
+    })
+  }, [])
+
   return (
     <div>
       <RSVP />
