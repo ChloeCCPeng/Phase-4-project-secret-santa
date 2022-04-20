@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_221457) do
   create_table "events", force: :cascade do |t|
     t.string "date"
     t.string "deadline"
-    t.string "patispate"
+    t.string "participate"
     t.integer "budget"
     t.string "virtual_link"
     t.string "rules"
