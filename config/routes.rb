@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   # get "/me", to: "users#show"
   resources :users, only: [:show, :create]
   resources :wishlists, only: [:index, :update, :destroy]
+  resources :events, only: [:index, :create, :show]
 end
