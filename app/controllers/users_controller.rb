@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
     #getting the users data from the backend into state when the page first loads 
-    skip_before_action :authorized, only: [:create]
+    # skip_before_action :authorized, only: [:create]
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
 
 
@@ -8,7 +8,6 @@ class UsersController < ApplicationController
     def index 
       render json: User.all
     end
-
 
 
     def show
@@ -35,7 +34,7 @@ class UsersController < ApplicationController
 
 
     #strong param to authorize certain users to acess the page 
-    def authorize 
+    def authorized
       return render json: {error: "Not authorized"}, status: :unauthorized unless session.include? :user_id
     end
 
