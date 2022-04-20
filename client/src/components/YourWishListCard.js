@@ -2,7 +2,7 @@ import React, { useEffect }from 'react'
 
 const wishListAPI = "http://localhost/3000/wishlists"
 
-function YourWishListCard({user}) {
+function YourWishListCard() {
 
 
 
@@ -22,7 +22,7 @@ function YourWishListCard({user}) {
 
   return (
     <div>
-      {user}
+      
       <button className="edit-btn" onClick={(console.log("Edit me"))}>📝</button>
       <button className="delete-btn" onClick={handleDeleteBtn}>🗑</button>
     </div>

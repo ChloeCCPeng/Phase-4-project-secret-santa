@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import User from './User';
 
-const userAPI = "http://localhost"
+
+
+const userAPI = "http://localhost/3000/signups"
 
 function SignUp() {
-// eslint-disable-next-line
+
   const [signUp,setSignUp] = useState([])
 
   
     fetch(userAPI , {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(console.log("Hello"))
+      body: JSON.stringify(setSignUp)
     })
   
 

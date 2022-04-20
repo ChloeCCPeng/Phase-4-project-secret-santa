@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import YourWishList from './YourWishList';
+import YourSecret from './YourSecret';
 
 function User() {
   const [user, setUser] = useState([])
@@ -13,7 +14,8 @@ function User() {
 
   return (
     <div>
-      <YourWishList user={user}/>
+      <YourWishList />
+      <YourSecret />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import RSVP from './RSVP';
 const inviteAPI = "http://localhost"
 
 function Invite() {
-// eslint-disable-next-line
+
   const [,set] = useState([])
 
   useEffect(() => {
