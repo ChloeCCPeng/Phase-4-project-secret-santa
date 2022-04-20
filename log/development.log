@@ -884,3 +884,13 @@ Processing by UsersController#create as */*
 Completed 201 Created in 12ms (Views: 1.1ms | ActiveRecord: 5.1ms | Allocations: 5834)
 
 
+Started GET "/users/1" for ::1 at 2022-04-20 13:31:15 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 46ms (Views: 10.9ms | ActiveRecord: 8.5ms | Allocations: 14202)
+
+
