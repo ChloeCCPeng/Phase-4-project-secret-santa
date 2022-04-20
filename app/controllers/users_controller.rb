@@ -4,21 +4,16 @@ class UsersController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
 
 
-    #GET '/user'
-    def index 
-      render json: User.all
-    end
-
-
+    #GET '/user/:id'
     def show
-      current_user = User.find(session[:user_id])
-      render json: current_user
+      user = User.find(params[:id])
+      render json: user
     end
 
-
+    #POST creating new user 
     def create 
       user = User.create!(user_params)
-      render json: user
+      render json: user, status: :created
     end
 
     private 
@@ -28,8 +23,9 @@ class UsersController < ApplicationController
       render json: {error: invlaid.record.errors}, status: :unprocessable_entity
     end
 
+    #may need to add a confirm password param in 
     def user_params 
-      params.permit(:username, :password)
+      params.permit(:first_name, :last_name, :username, :phone_number, :email, :password) 
     end
 
 
@@ -41,3 +37,4 @@ class UsersController < ApplicationController
 
 
   end
+  
