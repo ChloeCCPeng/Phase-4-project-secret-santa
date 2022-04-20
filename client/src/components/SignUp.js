@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import User from './User';
 
+const userAPI = "http://localhost"
+
 function SignUp() {
+
+  const [,set] = useState([])
+
+  useEffect(() => {
+    fetch(userAPI , {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(console.log("Hello"))
+    })
+  }, [])
+
+
   return (
     <div>
       <User />
