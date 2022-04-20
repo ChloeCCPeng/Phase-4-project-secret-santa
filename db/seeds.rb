@@ -22,7 +22,7 @@ Gift.create(id: 5, item: "wholefood gift card")
 puts " 🎟️ Creating events "
 Event.create(id: 1, date: "12.23.2022", deadline: "12.18.2022", participate: "in-person", budget: 50, virtual_link: "zoom.com", rules: "Try to stay within the spending limit, and make sure you make a Wishlist to give your person some good ideas. This is going to be lots of fun!")
 
-puts " 🎁 Creating wishlist "
+puts " 🛍️ Creating wishlist "
 Wishlist.create(id: 1, wish1: "backpack", wish2: "travel mug", wish3: "sofa potato blanket", wish4: "air fryer", wish5: "candles")
 Wishlist.create(id: 2, wish1: "3D puzzles", wish2: "travel mug", wish3: "Apple air tags", wish4: "Silk Eyemask", wish5: "giftcards")
 Wishlist.create(id: 3, wish1: "backpack", wish2: "travel mug", wish3: "sofa potato blanket", wish4: "air fryer", wish5: "candles")
