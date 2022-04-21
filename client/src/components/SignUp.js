@@ -18,8 +18,8 @@ function SignUp() {
   
 
   return (
-    <div>
-      <User />
+    <div class="form-group has-success">
+      {/* <User /> */}
       <form className="sign-up" onSubmit={console.log()} >
         <input className="email" type="text" id="email_id" placeholder="Email Address" value="" onChange={console.log()}/>
         <input className="first_name" type="text" id="first_name" placeholder="First Name" value="" onChange={console.log()} />
