@@ -2545,3 +2545,263 @@ Started GET "/signup" for ::1 at 2022-04-21 16:07:45 -0400
   
 ActionController::RoutingError (No route matches [GET] "/signup"):
   
+Started GET "/user/signup" for ::1 at 2022-04-21 16:33:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/signup"):
+  
+Started GET "/signup" for ::1 at 2022-04-21 16:33:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:39:48 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:39:48 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:39:48 -0400
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 16:39:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:39:48 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:40:14 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:40:14 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:40:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:40:14 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:40:23 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:40:23 -0400
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:40:23 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:40:24 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-04-21 16:44:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:45:17 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:45:17 -0400
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:45:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:45:18 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-04-21 16:46:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:46:54 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:46:54 -0400
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:46:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 16:46:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:46:54 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:50:25 -0400
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:50:25 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:50:25 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 16:50:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:50:25 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:51:10 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:51:10 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:51:14 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:51:14 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:51:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 16:51:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:51:14 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 16:52:41 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:52:41 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 16:52:41 -0400
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 16:52:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 16:52:41 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-04-21 17:03:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 17:03:21 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 17:03:21 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 17:03:21 -0400
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 17:03:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 17:03:21 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-04-21 17:10:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/user/signup" for ::1 at 2022-04-21 17:13:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/signup"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 17:21:13 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 17:21:13 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-04-21 17:21:13 -0400
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 17:21:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 17:21:13 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started POST "/signups" for 127.0.0.1 at 2022-04-21 17:21:20 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signups"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 17:21:20 -0400
+Started GET "/RSVP" for 127.0.0.1 at 2022-04-21 17:21:20 -0400
+Started GET "/users" for 127.0.0.1 at 2022-04-21 17:21:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/RSVP"):
+  
+Started PATCH "/wishlists" for 127.0.0.1 at 2022-04-21 17:21:20 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/wishlists"):
+  
+Started GET "/user" for ::1 at 2022-04-21 17:24:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/users" for ::1 at 2022-04-21 17:24:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/events" for ::1 at 2022-04-21 17:50:32 -0400
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (4.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:3:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 52ms (Views: 37.8ms | ActiveRecord: 15.2ms | Allocations: 7023)
+
+
