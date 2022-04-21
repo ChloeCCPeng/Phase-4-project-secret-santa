@@ -1,10 +1,10 @@
 import React from 'react'
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
     <div>
-      {/* <NavLink exact to="/signup">
+      <NavLink exact to="/signup">
           Sign Up
       </NavLink>
       <NavLink exact to="/event">
@@ -18,7 +18,7 @@ function Nav() {
       </NavLink>
       <NavLink exact to="/onlineStore">
           Shop with us
-      </NavLink> */}
+      </NavLink>
     </div>
   )
 }
