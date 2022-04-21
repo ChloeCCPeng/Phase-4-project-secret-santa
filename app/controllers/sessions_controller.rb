@@ -1,21 +1,30 @@
 class SessionsController < ApplicationController
-    skip_before_action :authroized, only: [:create] 
+    
 
-
-    #looks up user in databse, verify login credentials, then store the authenticared user's id in the session
-    def create 
+    #authenticating user's username and password 
+    def create
         user = User.find_by(username: params[:username])
+        #saving the user Id in  the session hash 
         if user&.authenticate(params[:password])
             session[:user_id] = user.id
-            render json: user, status: :created 
-            else
-            render json: { error: {login: "Invalid username or passowrd"}}, status: :unauthorized
+            # returning a JSON of the user's info
+            render json: user, status: :created
+        else
+            render json: { errors: ["Invalid username or password"] }, status: :unauthorized
         end
     end
 
+
+    
     def destroy
-        sessoin.delete :user_id
-        head :no_content
+        #if the user is logged in 
+        if session.include? :user_id
+            # removing the user's id from the sessions hash 
+            session.delete :user_id
+            head :no_content
+        else
+            render json: { errors: ["Unauthorized"] }, status: :unauthorized
+        end
     end
 
     
