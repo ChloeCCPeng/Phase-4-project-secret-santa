@@ -39,6 +39,8 @@ code {
   font-family: 'Major Mono Display', monospace;
   color: #bf1f10;
   font-size: 2rem;
+  margin-top: 10%;
+  text-decoration: none;
 }
 
 #Secret-Santa-image {
@@ -46,7 +48,6 @@ code {
 }
 
 button {
-  margin: 4% 25% 1% 25%;
   align-items: center;
   background-color: #FFE7E7;
   background-position: 0 0;
@@ -98,6 +99,13 @@ button:focus {
   box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
   color: #FFFFFF;
 }
+
+
+a:link, a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
 
 form {}
 
