@@ -5,15 +5,12 @@ class UsersController < ApplicationController
 
     #GET '/user/:id'
     #finds a user in the database using the user id from the session hash and returns the user in a json 
-    def show
-      user_id = session[:user_id]
-      if user_id
-          user = User.find(user_id)
-          render json: user, status: :created
-      else
-          render json: { error: "Unauthorized" }, status: :unauthorized
-      end
-    end
+    user = User.create!(create_user_params)
+    session[:user_id] ||= user.id
+    render json: user, status: :created
+rescue ActiveRecord::RecordInvalid => invalid
+    render json: { errors: [invalid.record.errors] }, status: :unprocessable_entity
+end
 
     #finds user in the database using the user id from the session hash and returns the user as json
 
