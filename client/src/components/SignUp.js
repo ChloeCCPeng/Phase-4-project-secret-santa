@@ -7,7 +7,7 @@ const userAPI = "/signups"
 
 function SignUp() {
 
-  const [signUp,setSignUp] = useState([])
+  const [signUp, setSignUp] = useState([])
 
   
     fetch(userAPI , {
