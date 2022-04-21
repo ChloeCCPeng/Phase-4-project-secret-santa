@@ -73,6 +73,8 @@ button {
   touch-action: manipulation;
   white-space: nowrap;
   word-break: break-word;
+  margin: 0 auto;
+  display: block;
 }
 
 button:active,
