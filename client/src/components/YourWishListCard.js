@@ -1,6 +1,6 @@
 import React, { useEffect }from 'react'
 
-const wishListAPI = "http://localhost/3000/wishlists"
+const wishListAPI = "/wishlists"
 
 function YourWishListCard() {
 

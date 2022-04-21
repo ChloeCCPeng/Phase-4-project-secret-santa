@@ -3,7 +3,7 @@ import User from './User';
 
 
 
-const userAPI = "http://localhost/3000/signups"
+const userAPI = "/signups"
 
 function SignUp() {
 
