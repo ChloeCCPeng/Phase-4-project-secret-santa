@@ -17,7 +17,6 @@ function SignUp() {
     })
   
 
-
   return (
     <div>
       <User />

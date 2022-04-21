@@ -1,24 +1,29 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import SignUp from "./SignUp";
+import Event from "./Event";
+// import Invite from "./Event";
+import RSVP from "./RSVP";
+
 
 function Nav() {
   return (
     <div>
       <NavLink exact to="/signup">
-          Sign Up
+        <SignUp />
       </NavLink>
       <NavLink exact to="/event">
-          Set up event
+        <Event />
       </NavLink>
-      <NavLink exact to="/invite">
-          Invite
-      </NavLink>
+      {/* <NavLink exact to="/invite">
+        <Invite />
+      </NavLink> */}
       <NavLink exact to="/RSVP">
-          Event Details
+          <RSVP />
       </NavLink>
-      <NavLink exact to="/onlineStore">
-          Shop with us
-      </NavLink>
+      {/* <NavLink exact to="/onlineStore">
+          <
+      </NavLink> */}
     </div>
   )
 }
