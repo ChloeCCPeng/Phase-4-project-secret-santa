@@ -1,16 +1,16 @@
 class UsersController < ApplicationController
-    #getting the users data from the backend into state when the page first loads 
+  #getting the users data from the backend into state when the page first loads 
 
 
 
     #GET '/user/:id'
-    #finds a user in the database using the user id from the session hash and returns the user in a json 
+  def show #finds a user in the database using the user id from the session hash and returns the user in a json 
     user = User.create!(create_user_params)
     session[:user_id] ||= user.id
     render json: user, status: :created
-rescue ActiveRecord::RecordInvalid => invalid
+  rescue ActiveRecord::RecordInvalid => invalid
     render json: { errors: [invalid.record.errors] }, status: :unprocessable_entity
-end
+  end
 
     #finds user in the database using the user id from the session hash and returns the user as json
 
@@ -20,15 +20,15 @@ end
       user = User.create!(create_user_params)
       session[:user_id] ||= user.id
       render json: user, status: :created
-  rescue ActiveRecord::RecordInvalid => invalid
+    rescue ActiveRecord::RecordInvalid => invalid
       render json: { errors: [invalid.record.errors] }, status: :unprocessable_entity
-  end
+    end
 
     private 
 
     #may need to add a confirm password param in 
     def create_user_params 
-      params.permit(:first_name, :last_name, :username, :phone_number, :email, :password) 
+      params.permit(:first_name, :last_name, :username, :phone_number, :email, :password, :confirm_password) 
     end
 
 
@@ -39,5 +39,5 @@ end
 
 
 
-  end
+end
   
