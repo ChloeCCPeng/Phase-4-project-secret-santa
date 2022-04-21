@@ -32,53 +32,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
 
-Secret-Santa {
+#Secret-Santa {
   font-family: 'Major Mono Display', monospace;
+  color: #bf1f10;
+  font-size: 2rem;
 }
 
 button {
-  appearance: none;
-  background-color: #FFFFFF;
-  border-radius: 40em;
-  border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
   box-sizing: border-box;
-  color: #000000;
+  color: #D33A2C;
   cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,sans-serif;
-  font-size: 1.2rem;
+  display: flex;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: -.24px;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
-  text-align: center;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+  text-align: left;
   text-decoration: none;
-  transition: all .15s;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
 }
 
-.button:hover {
-  background-color: #d00404e4;
-  box-shadow: #a60202 0 -6px 8px inset;
-  transform: scale(1.125);
+button:active,
+button:hover,
+button:focus {
+  outline: 0;
 }
 
-.button:active {
-  transform: scale(1.025);
+
+button:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
 }
 
-@media (min-width: 768px) {
-  .button {
-    font-size: 1.5rem;
-    padding: .75rem 2rem;
-  }
+button:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+button:active:hover,
+button:focus:hover,
+button:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
 }
 
 form {}
