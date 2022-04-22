@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import User from './User';
 
-
-
-const userAPI = "/signups"
+const userAPI = "/signUps"
 
 function SignUp() {
 
   const [signUp, setSignUp] = useState([])
-
+  const [email, setEmail] = useState("")
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [errors, setErrors] = useState([])
   
     fetch(userAPI , {
       method: 'POST',
@@ -18,17 +19,65 @@ function SignUp() {
     .then((res)=> res.json())
     .then((data)=> setSignUp(data))
 
+    function handleSubmit(e) {
+      e.preventDefault()
+      let onSubmitEmail
+      onSubmitEmail(e.currentTarget.elements.email)
+    }
+
+    if (firstName.length >0) {
+      const formData = {firstName, lastName:lastName, phoneNumber:phoneNumber, email:email};
+      const dataArray =[...signUp, formData];
+      setSignUp(dataArray);
+      setFirstName("");
+      setLastName("");
+      setPhoneNumber("");
+      setEmail("");
+      } else {
+        setErrors(["Required info"]);
+      }
+
+    function handleEmail(e) {
+      setEmail(e.target.value)
+    }
+
+    function handleFirstName(e) {
+      setFirstName(e.target.value)
+    }
+
+    function handleLastName(e) {
+      setLastName(e.target.value)
+    }
+
+    function handlePhoneNumber(e) {
+      setPhoneNumber(e.target.value)
+    }
+
+
+    // const listOfSubmissions = signUp.map((data, index) => {
+    //   return (
+    //     <div key={index}>
+    //       {data.firstName} {data.lastName} {data.phoneNumber} {data.email}
+    //     </div>
+    //     )
+    //   });
+
   return (
     <div class="form-group has-success">
-      {/* <User /> */}
-      <form className="sign-up" onSubmit={console.log()} >
-        <input className="email" type="text" id="email_id" placeholder="Email Address" value="" onChange={signup.email}/>
-        <input className="first_name" type="text" id="first_name" placeholder="First Name" value="" onChange={signup.firstName} />
-        <input className="last_name" type="text" id="last_name" placeholder="Last Name" value="" onChange={signup.lastName} />
-        <input className="phone" type="text" id="phone" placeholder="Phone Number" value="" onChange={signup.phone} />
-        <input className="password" type="password" id="password" placeholder="Password" value="" onChange={signup.password} />
+      <form className="sign-up" onSubmit={handleSubmit} >
+        <input className="email" type="text" id="email_id" placeholder="Email Address" value={email} onChange={handleEmail}/>
+        <input className="first_name" type="text" id="first_name" placeholder="First Name" value={firstName} onChange={handleFirstName} />
+        <input className="last_name" type="text" id="last_name" placeholder="Last Name" value={lastName} onChange={handleLastName} />
+        <input className="phone_number" type="text" id="phone" placeholder="Phone Number" value={phoneNumber} onChange={handlePhoneNumber} />
         <button className="sign_up_btn" type="submit">Submit</button>
       </form>
+      {errors.length > 0
+        ? errors.map((error, index) => (
+          <p key={index}>{error}</p>
+        ))
+        :null
+    }
+    {listOfSubmissions}
     </div>
   )
 }
