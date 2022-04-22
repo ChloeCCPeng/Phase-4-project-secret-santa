@@ -1,4 +1,4 @@
-class WishilistsController < ApplicationController
+class WishlistsController < ApplicationController
     
     #PATCH 
     def update 
