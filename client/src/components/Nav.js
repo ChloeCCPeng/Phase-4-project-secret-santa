@@ -21,8 +21,8 @@ function Nav() {
       <NavLink exact to="/RSVP">
           <RSVP />
       </NavLink> */}
-      <NavLink exact to="./SignUp">
-        SignUp
+      <NavLink exact to="/SignUp">
+        {/* <SignUp /> */}
       </NavLink>
       <NavLink exact to="/event">
         <Event />

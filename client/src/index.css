@@ -73,7 +73,7 @@ button {
   touch-action: manipulation;
   white-space: nowrap;
   word-break: break-word;
-  margin: 0 auto;
+  margin: 10% auto;
   display: block;
 }
 
