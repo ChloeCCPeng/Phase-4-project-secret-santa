@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-
-const userAPI = "/signUps"
+import React, { useState, useEffect } from 'react';
 
 function SignUp() {
 
@@ -11,22 +9,23 @@ function SignUp() {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [errors, setErrors] = useState([])
   
-    fetch(userAPI , {
+  useEffect(() => {
+    fetch("/signups" , {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(setSignUp)
     })
     .then((res)=> res.json())
     .then((data)=> setSignUp(data))
+  }, [])
 
     function handleSubmit(e) {
       e.preventDefault()
       let onSubmitEmail
       onSubmitEmail(e.currentTarget.elements.email)
-    }
 
-    if (firstName.length >0) {
-      const formData = {firstName, lastName:lastName, phoneNumber:phoneNumber, email:email};
+    if (firstName.length > 0) {
+      const formData = {firstName:firstName, lastName:lastName, phoneNumber:phoneNumber, email:email};
       const dataArray =[...signUp, formData];
       setSignUp(dataArray);
       setFirstName("");
@@ -35,7 +34,7 @@ function SignUp() {
       setEmail("");
       } else {
         setErrors(["Required info"]);
-      }
+      }}
 
     function handleEmail(e) {
       setEmail(e.target.value)
@@ -54,13 +53,13 @@ function SignUp() {
     }
 
 
-    // const listOfSubmissions = signUp.map((data, index) => {
-    //   return (
-    //     <div key={index}>
-    //       {data.firstName} {data.lastName} {data.phoneNumber} {data.email}
-    //     </div>
-    //     )
-    //   });
+    const listOfSubmissions = signUp.map((data, index) => {
+      return (
+        <div key={index}>
+          {data.firstName} {data.lastName} {data.phoneNumber} {data.email}
+        </div>
+        )
+      });
 
   return (
     <div class="form-group has-success">
