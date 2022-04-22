@@ -53,13 +53,13 @@ function SignUp() {
     }
 
 
-    const listOfSubmissions = signUp.map((data, index) => {
-      return (
-        <div key={index}>
-          {data.firstName} {data.lastName} {data.phoneNumber} {data.email}
-        </div>
-        )
-      });
+    // const listOfSubmissions = signUp.map((data, index) => {
+    //   return (
+    //     <div key={index}>
+    //       {data.firstName} {data.lastName} {data.phoneNumber} {data.email}
+    //     </div>
+    //     )
+    //   });
 
   return (
     <div class="form-group has-success">
@@ -76,7 +76,7 @@ function SignUp() {
         ))
         :null
     }
-    {listOfSubmissions}
+    {/* {listOfSubmissions} */}
     </div>
   )
 }
