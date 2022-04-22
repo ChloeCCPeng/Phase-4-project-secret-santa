@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import SignUp from "./SignUp";
 import Event from "./Event";
+import Home from "./Home";
+
 // import Invite from "./Event";
 import RSVP from "./Event";
 
@@ -21,8 +23,9 @@ function Nav() {
       <NavLink exact to="/RSVP">
           <RSVP />
       </NavLink> */}
+
       <NavLink exact to="/SignUp">
-        {/* <SignUp /> */}
+        <SignUp />
       </NavLink>
       <NavLink exact to="/event">
         <Event />

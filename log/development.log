@@ -3477,3 +3477,5 @@ Processing by UsersController#create as */*
 Completed 201 Created in 7ms (Views: 0.8ms | ActiveRecord: 1.6ms | Allocations: 2325)
 
 
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE DATABASE "react_rails_api_project_template_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "react_rails_api_project_template_test" ENCODING = 'unicode'[0m
