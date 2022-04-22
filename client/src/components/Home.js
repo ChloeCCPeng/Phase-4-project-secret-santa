@@ -22,7 +22,7 @@ function Home() {
       
       {/* <OnlineStore />
       <Event /> */}
-      
+    
       {/* <SignUp /> */}
       {/* <Invite /> */}
     </div>
